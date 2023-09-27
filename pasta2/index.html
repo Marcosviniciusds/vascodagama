@@ -1,56 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Vinicius</title>
     <style>
-        
-    h1 {font-size: 50px;color:}
+        h1 {
+            font-size: 50px;
+            color:
+        }
 
-    table,th,td{border: 1px black solid;border-collapse: collapse;}
-    .teste{
-        color: brown;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: larger;
-    }
-   #site{text-align: center;}
+        table,
+        th,
+        td {
+            border: 1px black solid;
+            border-collapse: collapse;
+            
+        }
+
+        .tabela {
+            margin: 50px;
+            padding: 10px;
+            border: 5px solid rgb(50, 177, 50);
+            background-color: rgb(208, 208, 219);
+            display: flex;
+            justify-content: center;
+        
+        }
+
+        .teste {
+            color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+
+        #site {
+            text-align: center;
+        }
+
+
+        .box {
+            ;
+            height: 40px;
+            margin: px;
+            border: 10px double rgb(100, 186, 197);
+            background: rgb(194, 159, 159);
+
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .foto {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
+
 <body>
-   <div id="site">
-    <H1><u>Rank de jogadores</u></H1>
+    <div id="site">
+        <H1><u>Rank de jogadores</u></H1>
 
+       
+        <div class="tabela">
+             <div class="tabelalargura"> 
+            <table>
 
+                <th> GOAT </th>
+                <th>MEDIANO</th>
+                <th> RUIM </th>
+                <tr>
+                    <td>Messi</td>
+                    <td>Cristiano</td>
+                    <td>Ribamar</td>
+                </tr>
+                <tr>
+                    <td>Neymar</td>
+                    <td>Endrick</td>
+                    <td>Luan</td>
+                </tr>
 
-    <table>
+            </table>
+            </div>
+        </div>
         
-        <th> GOAT </th>  <th>MEDIANO</th> <th> RUIM </th>
-    <tr>
-        <td>Messi</td>
-        <td>Cristiano</td>
-        <td>Ribamar</td>
-    </tr>
-    <tr>
-       <td>Neymar</td>
-       <td>Endrick</td>
-       <td>Luann</td>
-</tr>
+        <p>
+            Conheça a história do polonês Robert Lewandowski, duas vezes Melhor do Mundo
+            “O Messi é diferente, um jogador que não tem muita explicação. É óbvio que todo mundo precisa aprender
+            alguma coisa, mas eu acho que ele foi o que nasceu com quase tudo, tudo certinho”, diz o ex-meia Deco, com
+            quem o atacante atuou no Barcelona no início da carreira.</p>
+    </div>
 
-    </table>
-<p>  Não há o que esconder sobre Lionel Messi. Todo mundo sabe que ele é um gênio do futebol mundial. Os golaços que a gente só <br>acredita porque pode ver, feitos de todo jeito  de perto, de longe, com a bola rolando, de falta, pênalti, os dribles, feitos com enorme<br> facilidade. É um talento tão grande que nem mesmo quem o conhece bem consegue explicar.
+    <div class="box">
+        <div class="flex">
+            <a class="teste" href="https://pt.wikipedia.org/wiki/Lionel_Messi"> <b> Historia de LIonel Messi</b></a>
 
-    Cristiano Ronaldo é o típico 'jogador <br>completo', mas nem por isso deixa de trabalhar
-    Copa do Mundo do Catar é a oportunidade de Karim Benzema reescrever a própria <br>história.
-    Conheça a história do polonês Robert Lewandowski, duas vezes Melhor do Mundo
-    “O Messi é diferente, um jogador que<br> não tem muita explicação. É óbvio que todo mundo precisa aprender alguma coisa, mas eu acho que ele foi o que nasceu com quase<br> tudo, tudo certinho”, diz o ex-meia Deco, com quem o atacante atuou no Barcelona no início da carreira.</p>
-    
 
-    <a   class ="teste" href="https://pt.wikipedia.org/wiki/Lionel_Messi">  <b>                                                        Historia de LIonel Messi</b></a>
+            <a class="teste" href="https://pt.wikipedia.org/wiki/Lionel_Messi"> <b> Historia de LIonel Messi</b></a>
+        </div>
+    </div>
     <hr>
-   
-
-<img src="imagem/LIONEL MESSI.webp" alt="Foto de Messi">
-</div>
+    <div class="foto">
+        <img src="imagem/LIONEL MESSI.webp" alt="Foto de Messi">
+    </div>
 </body>
+
 </html>
