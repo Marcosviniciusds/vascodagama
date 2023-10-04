@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio logica</title>
+    <style>
+        .cor {
+            background-color: bisque;
+        }
+
+        .posi {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+
+        .prompt {
+            vertical-align: middle;
+        }
+        .p1{
+            margin: 20%;
+            border: 5px solid color red;
+            padding: 30px;
+            
+        }
+    </style>
+</head>
+
+<body class="cor">
+    <div class="posi">
+        <h1>lógica</h1>
+        <div class="p1"></div> <p >
+        Calculando quantas balas faltam para que a divisão fique igual entre amigos?!
+       </p> </div>
+    </div>
+    <div class="prompt">
+        <script>
+            var balas = prompt('Digite a quantidade de balas:')//sempre maior que amigos
+            var amigos = prompt('Digite a quantidade de amigos:')//sempre menor que balas
+            var restante = balas % amigos 
+             
+           var faltantes =  amigos -restante
+            
+            //programe aqui
+            alert(faltantes);
+        </script>
+    </div>
+
+
+
+
+</body>
+
+</html>
