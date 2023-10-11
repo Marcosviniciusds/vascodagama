@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var senha = prompt('Digite sua senha');
+        var valida = true;
+
+        valida = (senha % 10) >= 1
+        senha = (senha / 10)
+        valida = (senha % 10) >= 1 && valida
+            senha = (senha / 10)
+        valida = (senha % 10) >= 1 &&valida
+            senha = (senha / 10)
+        valida = (senha % 10) >= 1 && valida
+            senha = (senha / 10)
+
+        if (valida) {
+            alert('senha valida')
+        }
+
+        else {
+            alert('senha invalida')
+        }
+
+
+
+        //file:///G:/Aulas/Logica%20de%20programa%C3%A7%C3%A3o/ifelse.pdf
+    </script>
+
+</body>
+
+</html>
