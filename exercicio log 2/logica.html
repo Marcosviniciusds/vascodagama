@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log</title>
+    <style>
+        .txt {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Lógica </h1>
+    <br>
+    <div txt>
+        <p>aaaaaaaaaaaaaaaaaaaaaa</p>
+    </div>
+    <script>
+        //Entrada
+        var consumo = prompt('DIgite seu consumo em m³')
+
+        //tarifas
+
+        tarifa = 0
+
+
+
+        if (consumo <= 20) {
+            tarifa = consumo * 1.60
+        }
+        if (consumo > 21 && consumo < 50) {
+            tarifa = consumo * 2.80
+        }
+        if (consumo > 50) {
+            tarifa = consumo * 4.20
+        }
+        alert('com base nas tarifas seu custo é R$' + tarifa)
+        //desconto
+        var desconto = 0
+        var acrescimo = 0
+        if (tarifa <= 100) {
+            desconto = tarifa * 0.05
+            alert('valor final é R$' + (tarifa - desconto))
+        }
+        if (tarifa >= 200) {
+            acrescimo = tarifa * 0.10
+            alert('valor final é R$' + (tarifa + acrescimo))
+        }
+
+        
+    </script>
+</body>
+
+</html>
