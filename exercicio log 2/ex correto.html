@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //entrada
+var consumo = prompt('Digite seu consumo')
+tarifa =0
+//tarifa
+if(consumo<=20){
+tarifa= consumo*1.60
+}
+else if(consumo <=50){
+    tarifa=consumo*2.80
+}
+else{
+    tarifa =consumo*4.20
+}
+alert("tarifa R$;"+tarifa)
+//deconto
+if(tarifa<=100){
+    tarifa=  tarifa-tarifa*0.05
+}
+else{
+    tarifa=tarifa+tarifa*0.10
+}
+alert('valor final R$'+tarifa)
+    </script>
+</body>
+</html>
