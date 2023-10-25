@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+
+<body>
+    
+
+
+    <script>
+        var nota = []
+        var somaNota = 0
+        var tmn = parseInt(prompt("tamanho do array"))
+        for (let i = 0; i < tmn; i++) {
+            var numero = parseInt(prompt("coloque sua nota"))
+            nota.push(numero)
+
+        }
+        for (let i = 0; i < nota.length; i++) {
+            somaNota += nota[i]
+        }
+
+
+        console.log(`As notas são ; ${nota}`)
+
+        console.log(`A media das notas são ; ${somaNota / tmn}`)
+
+    </script>
+</body>
+
+</html>
