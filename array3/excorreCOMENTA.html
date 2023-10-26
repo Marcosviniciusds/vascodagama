@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <script>
+        //vetor para armazenar os numeros insiridos pelo usuario
+        let numeros = [];
+        // vetor para armazenar os numeros pares 
+        let pares = [];
+        //vetor para amazenar os numeros impares
+        let impares = [];
+        //For para fazer um loop, sendo variavel inicial = o ; repetindo até ser menor que 20(até 19) ;somando +1 a cada repetiçao 
+        for (let i = 0; i < 20; i++) {
+            //os valores inseridos no prompt;usando parseInt para converter em numeros inteiros e serão amarzenado na variavel numero
+            let numero = parseInt(prompt("Digite um número inteiro:"));
+            //a função push é usada para adicionar os valores inseridos no prompt na array numero
+            numeros.push(numero);
+            //usa if tendo uma condição de que o vetor numero dividido por 2 deve ter um resto igual a zero 
+            if (numero % 2 === 0) {
+                //caso a condição seje verdadeira é executado a função push adicionando o numero na array pares
+                pares.push(numero);
+                //caso seje falsa , irá adicionar o numero na array impares
+            } else {
+                impares.push(numero);
+            }
+        }
+        //irá imprimir as mensagens colocadas no console
+        console.log("Números: ", numeros);
+        console.log("Pares: ", pares);
+        console.log("Ímpares: ", impares);
+    </script>
+</body>
+
+</html>
