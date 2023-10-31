@@ -10,28 +10,28 @@
 <body>
     <script>
         //vetor a armazenando uma array  
-        let a = [];
-        //variavel b sendo igual a zero
-        let b = 0;
-        //variavel c sendo igual a um
-        let c = 1;
+        let arrayNumero = [];
+        //variavel somaNumeros sendo igual a zero
+        let somaNumeros = 0;
+        //variavel multiplicacaoNumero sendo igual a um
+        let multiplicacaoNumero = 1;
         //O valor inserido no prompt ; será o valor da variavel d , usando o parseInt para converter em numeros  em inteiros 
-        let d = parseInt(prompt("Digite o d do array:"));
-        //Será uma repetição ,sendo variavel inicial zero , repetindo até quando (let i) for menor que a variavel d, a cada repetição i soma +1
-        for (let i = 0; i < d; i++) {
+        let tamanhoArray = parseInt(prompt("Digite o tamanho do array:"));
+        //Será uma repetição ,sendo variavel inicial zero , repetindo até quando (let i) for menor que a variavel tamanhoArray, a cada repetição i soma +1
+        for (let i = 0; i < tamanhoArray; i++) {
             //o valor inserido  no prompt ; será o valor da variavel numero , usando parseInt pra ter numeros inteiros 
             let numero = parseInt(prompt("Digite um número inteiro:"));
-            //irá adicionar valores de (numero) na array a
-            a.push(numero);
-            // o novo  valor de b será igual  a soma de b + numero
-            b += numero;
-            // o novo valor de c será igual a multiplação de c * numero
-            c *= numero;
+            //irá adicionar valores de (numero) na arrayNumero
+            arrayNumero.push(numero);
+            // o novo  valor de b será igual  a soma de somaNumeros + numero
+            somaNumeros += numero;
+            // o novo valor de c será igual a multiplação de multiplicacaoNumero * numero
+            multiplicacaoNumero *= numero;
         }
         //irá imprimir as mensagem no console 
-        console.log("A b dos números é: " + b);
-        console.log("A c dos números é: " + c);
-        console.log("Os a digitados são: " + a);
+        console.log("A somaNumeros dos números é: " + somaNumeros);
+        console.log("A multiplicacaoNumero dos números é: " + multiplicacaoNumero);
+        console.log("Os numeros digitados são: " + arrayNumero);
     </script>
 </body>
 

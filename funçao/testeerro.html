@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio </title>
+</head>
+
+<body>
+
+    <script>
+
+        function entradafunc() {
+            //Declaração mais inserção de valor do tamanho do array
+            tamanhoArray = parseInt(prompt('Digite o tamanho do array'));
+            //Declaração array notas vazio
+            var notas = [];
+            //Declaração valor total como 0
+            var valorTotal = 0;
+        }
+
+        function processoFunc() {
+            //Repetição for utilizando o limite como variavel tamanhoArray
+            for (let i = 0; i < tamanhoArray; i++) {
+                //Cria variavle nota e atribui valor digitado pelo usuario
+                var nota = parseInt(prompt(`Digite a ${i + 1}ª nota: `));
+                //Inserindo valor da variavel nota no final do array
+                notas.push(nota);
+            }
+
+            //Repetição utilizando o limite como tamanho do array notas
+            for (let i = 0; i < notas.length; i++) {
+                //Igual a valorTotal = valorTotal + notas[i]. Somando todos os valores do array notas
+                valorTotal += notas[i];
+            }
+
+        }
+
+        function saidaFunc(){
+            console.log("Notas digitadas: " + notas);
+
+            console.log(`A média das notas é ${valorTotal / tamanhoArray}`);
+        }
+        entradafunc()
+        processoFunc()
+        saidaFunc()
+    </script>
+</body>
+
+</html>

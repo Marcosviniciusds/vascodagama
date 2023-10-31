@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //variaveis de entrada para o numero 1 e numero 2
+        var n1 = parseInt(prompt('numero 1'))
+        var n2 = parseInt(prompt('numero 2'))
+        //parametro messi e cr7 é um apelido , que será atribuido o valor quando chamar a funçao somaFunction 
+        function somaFunction(MESSI, CR7) {
+            //o console ira imprimir diretamente o calculo messi + cr7 , na qual o valor será introduzido quando chamar a funçao 
+            console.log(MESSI + CR7)
+        }
+        //chamando a funçao da soma , atribuindo os valores de (n1 para messi) e (n2 para cr7)
+        somaFunction(n1, n2)
+        // uma função com os parametros feijao e arroz 
+        function multiplicacaoFunction(FEIJAO, ARROZ) {
+            //irá retornar fora da funçao o valor   da multiplicaçao de feijao por arroz
+            return FEIJAO * ARROZ
+
+        }
+        //variavel de apoio
+        var apoio = 0
+        //funçao 
+        function divfuction(BATMAN, ROBIN) {
+            //atualiza o valor de apoio ,para o resultado da divisao 
+            apoio = BATMAN / ROBIN
+        }
+        //chama a funçao e atribui o valor 
+        divfuction(n1, n2)
+
+        console.log(multiplicacaoFunction(n1, n2))
+        console.log(apoio)
+    </script>
+</body>
+
+</html>
