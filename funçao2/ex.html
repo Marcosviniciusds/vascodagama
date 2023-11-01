@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var kelvin = 0
+        var temperatura = parseInt(prompt("digite uma temperatura em graus celsios"))
+        function kelvinFuction(celsios) {
+            return kelvin = (celsios + 273)
+        }
+
+        function farenheitFunction(farenheit) {
+            return (farenheit - 273) + 32 * 1.8
+        }
+
+        console.log(`Em Kelvin:  ${kelvinFuction(temperatura)}`)
+        console.log(`Em Farenheit: ${farenheitFunction(kelvin)}`)
+        // outra opçao é console.log(`Em Farenheit: ${farenheitFunction(kelvinFuction(temperatura))}`) , casa não use a var (kelvin)
+
+        //-------------------------------------------------------------------
+        var base = parseInt(prompt("digite a base do triangulo"))
+        var altura = parseInt(prompt("digite a altura do triangulo"))
+
+        function areaTriangulo(B, H) {
+            return B * H / 2
+        }
+        console.log(`A área do triângulo é: ${areaTriangulo(base, altura)}`)
+        //-------------------------------------------------------------------
+        var Pi = 3.14
+        var raio = parseInt(prompt("digite o raio do circulo"))
+        function area(R) {
+            return Pi * (R * R)
+         
+        }
+        function Peri(r) {
+          
+            return 2 * Pi * r
+        }
+
+        console.log(`A área é: ${area(raio)}`)
+        console.log(`O perimetro é: ${Peri(raio)}`)
+    </script>
+</body>
+
+</html>
