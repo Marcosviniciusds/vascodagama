@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ExercicioCEP</title>
 </head>
+
 <body>
     <script>
-var cep = prompt("digite seu CEP")
-
-function endereço (CEP){
-        System.out.println(CEP.substring(0, 5) + "-" + CEP.substring(5));
+        var numeros = prompt("digite seu CEP")
+        //xxxxx-xxx
+        //01234-567
+        var resultado = 0
+        function endereço(CEP) {
+            resultado = (CEP.substring(0, 5) + "-" + CEP.substring(5, 8));
         }
-        console.log(cep)
+        endereço(numeros)
+        console.log(`O CEP é ( ${resultado} )`)
     </script>
 </body>
+
 </html>
