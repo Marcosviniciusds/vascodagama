@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = []
+        function inserirAray(obj) {
+            array.push(obj)
+        }
+        
+            var usuarios = [{
+                nome: prompt("qual seu nome"),
+                habilidades: [prompt("suas habilidades"), prompt("suas habilidades"), prompt("suas habilidades")]
+            },
+            {
+                nome: prompt("qual seu nome"),
+                habilidades: [prompt("suas habilidades"), prompt("suas habilidades"), prompt("suas habilidades")]
+            }
+            ]
+
+let text = "";
+for (let nome of usuarios) {
+text += nome; console.log(nome)
+}
+   
+
+        inserirAray(usuarios)
+        console.log(array)
+    </script>
+</body>
+
+</html>

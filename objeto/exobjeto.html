@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var array = []
+
+        var r = prompt("fale sua rua ")
+        var n = parseInt(prompt("fale sua numero"))
+        var b = prompt("fale sua bairro")
+        var c = prompt("fale sua cidade ")
+        var u = prompt("fale sua uf ")
+        var vali = prompt(" deseja inserir outro endereço ?")
+        var endereço = {
+            rua: r,
+            numero: n,
+            bairro: b,
+            cidade: c,
+            uf: u,
+        }
+        
+        while (vali == "sim") {
+            var r = prompt("fale sua rua ")
+            var n = parseInt(prompt("fale sua numero"))
+            var b = prompt("fale sua bairro")
+            var c = prompt("fale sua cidade ")
+            var u = prompt("fale sua uf ")
+
+         
+            var vali = prompt(" deseja inserir outro endereço ?")
+        }
+array.push(endereço)
+
+        console.log(array)
+    </script>
+</body>
+
+</html>
